@@ -1,0 +1,55 @@
+@CHARSET "ISO-8859-1";
+
+body {
+	background-color:#DDD;
+	color: #022850;
+}
+.container {
+	background-color:white;
+	margin-top: 10px;
+	margin-bottom:10px;
+}
+.header {
+	height:10px;
+}
+.footer {
+	height:10px;
+}
+h1, h2, h3, h4 {
+	font-family: Fontastique, Arial, Sans-serif;
+	font-weight: bold;
+}
+p {
+	font-family: "Myriad Pro", Arial, Sans-serif;
+}
+textarea {
+	width: 100%;
+	margin-bottom:10px;
+}
+.btn-default {
+	background-color: #A3A3A3;
+}
+.btn-default:hover {
+	background-color: #00AAB5;
+}
+.btn-primary {
+	background-color: #58BEC5;
+	color: #022850;
+}
+.btn-primary:hover {
+	background-color: #022850;
+	color: #58BEC5;
+}
+@media screen and (max-width:992px) and (min-width:768px) { 
+	p {
+		font-size: 30px;
+	}
+	.btn-large {
+		height: 120px;
+		line-height:120px;
+		font-size: 30px;
+	}
+	textarea {
+		height:360px;
+	}
+}

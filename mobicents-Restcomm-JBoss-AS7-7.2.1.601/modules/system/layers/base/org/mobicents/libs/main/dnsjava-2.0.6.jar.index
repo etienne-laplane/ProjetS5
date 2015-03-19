@@ -1,0 +1,10 @@
+
+org/xbill/DNS/utils
+org/xbill/DNS/spi
+org/xbill
+org/xbill/DNS/security
+META-INF/services
+org/xbill/DNS/windows
+org
+org/xbill/DNS
+META-INF

@@ -1,0 +1,1 @@
+{"defaultTarget":"start","nodeNames":[{"name":"start","label":"START_MODULE"},{"name":"module1","label":"DIRECT"},{"name":"module2","label":"URGENCY"},{"name":"module3","label":"DELAYED"},{"name":"module4","label":"REFUSED"},{"name":"module5","label":"END_MODULE"},{"name":"module6","label":"ERROR"}]}

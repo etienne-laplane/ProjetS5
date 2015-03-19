@@ -1,0 +1,15 @@
+
+META-INF/maven
+org/mobicents
+org/mobicents/servlet
+org
+META-INF
+org/mobicents/servlet/sip
+org/mobicents/servlet/sip/listener
+org/mobicents/servlet/sip/notification
+org/mobicents/javax/servlet/sip/dns
+META-INF/maven/org.mobicents.servlet.sip
+org/mobicents/javax/servlet/sip
+org/mobicents/javax
+META-INF/maven/org.mobicents.servlet.sip/sip-servlets-client
+org/mobicents/javax/servlet

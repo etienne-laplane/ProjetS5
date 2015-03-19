@@ -1,0 +1,16 @@
+
+org/apache/cxf/frontend/spring
+schemas
+META-INF/maven
+schemas/blueprint
+OSGI-INF
+org
+META-INF
+org/apache/cxf/frontend
+META-INF/maven/org.apache.cxf/cxf-rt-frontend-simple
+org/apache/cxf/frontend/blueprint
+OSGI-INF/blueprint
+org/apache/cxf
+org/apache/cxf/simple
+org/apache
+META-INF/maven/org.apache.cxf

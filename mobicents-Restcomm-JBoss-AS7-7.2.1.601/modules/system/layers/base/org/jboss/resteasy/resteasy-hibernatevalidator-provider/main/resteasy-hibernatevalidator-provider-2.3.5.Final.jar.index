@@ -1,0 +1,12 @@
+org/jboss/resteasy/plugins/validation/hibernate
+
+META-INF/maven
+org/jboss
+org/jboss/resteasy/plugins
+META-INF/services
+META-INF/maven/org.jboss.resteasy
+org
+META-INF
+META-INF/maven/org.jboss.resteasy/resteasy-hibernatevalidator-provider
+org/jboss/resteasy/plugins/validation
+org/jboss/resteasy

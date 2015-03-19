@@ -1,0 +1,14 @@
+
+org/jboss/as/clustering
+org/jboss/as/clustering/ejb3
+META-INF/maven
+org/jboss
+META-INF/maven/org.jboss.as
+org/jboss/as/clustering/ejb3/cache/backing
+META-INF/services
+org/jboss/as/clustering/ejb3/cache/backing/infinispan
+org/jboss/as/clustering/ejb3/cache
+org/jboss/as
+org
+META-INF
+META-INF/maven/org.jboss.as/jboss-as-clustering-ejb3-infinispan

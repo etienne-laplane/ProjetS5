@@ -1,0 +1,160 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>dynamease-appless</artifactId>
+	<packaging>war</packaging>
+
+	<parent>
+		<groupId>com.dynamease</groupId>
+		<artifactId>dynamease</artifactId>
+		<version>2.3.1-PATCHES</version>
+	</parent>
+
+<!-- Ex profils conservés pour commentaires pour garder les clés à mettre en fichier de configuration -->
+<!-- 	<properties> -->
+
+<!-- 		<url.application>https://www.dropbox.com/s/33u12pjgz1rl0be/DynameaseContactsLocal.apk</url.application> -->
+<!-- 		<url.pushServer>http://localhost:8080/unifiedpush-server-0.10.4</url.pushServer> -->
+<!-- 		<pushApplicationId>88496dc1-169d-4af2-937d-b026e5f45ab1</pushApplicationId> -->
+<!-- 		<pushApplicationSecret>cd81c959-74ce-4319-a70b-c3e90636d0ad</pushApplicationSecret> -->
+<!-- 	</properties> -->
+
+<!-- 	<profiles> -->
+<!-- 		<profile> -->
+<!-- 			<id>pepiniere</id> -->
+
+<!-- 			<properties> -->
+<!-- 				<url.application>https://www.dropbox.com/s/33u12pjgz1rl0be/DynameaseContactsLocal.apk</url.application> -->
+<!-- 				<url.pushServer>http://192.168.1.182:8080/unifiedpush-server-0.10.4</url.pushServer> -->
+<!-- 				<pushApplicationId>88496dc1-169d-4af2-937d-b026e5f45ab1</pushApplicationId> -->
+<!-- 				<pushApplicationSecret>cd81c959-74ce-4319-a70b-c3e90636d0ad</pushApplicationSecret> -->
+<!-- 			</properties> -->
+
+
+
+
+<!-- 		</profile> -->
+<!-- 		<profile> -->
+
+
+<!-- 			<id>integration</id> -->
+
+<!-- 			<properties> -->
+<!-- 				<url.application>https://www.dropbox.com/s/cyspqrtbubbup3f/DynameaseContactsMonastir.apk</url.application> -->
+<!-- 				<url.pushServer>http://localhost:8080/unifiedpush-server-0.10.4</url.pushServer> -->
+<!-- 				<pushApplicationId>55e73a33-6e34-4ef3-9973-508b99dfd5d4</pushApplicationId> -->
+<!-- 				<pushApplicationSecret>5d005a74-c78e-4ac5-8e1d-55b2ff3f4095</pushApplicationSecret> -->
+<!-- 			</properties> -->
+
+
+
+
+<!-- 		</profile> -->
+	
+<!-- 		<profile> -->
+<!-- 			<id>deployment</id> -->
+
+<!-- 			<properties> -->
+<!-- 				<url.application>https://www.dropbox.com/s/qjh2iu286vcu1er/DynameaseContactsBenGarden.apk</url.application> -->
+<!-- 				<url.pushServer>http://localhost:8080/unifiedpush-server-0.10.4</url.pushServer> -->
+<!-- 				<pushApplicationId>632dc262-3963-4c91-b4d5-8819ef284586</pushApplicationId> -->
+<!-- 				<pushApplicationSecret>5b36b043-b018-4eab-9c5f-4e3d4fad4bb1</pushApplicationSecret> -->
+<!-- 			</properties> -->
+
+
+<!-- 		</profile> -->
+
+
+<!-- 	</profiles> -->
+
+
+	<dependencies>
+
+
+
+
+		<!-- Auto PA Dynamease -->
+		<dependency>
+			<groupId>com.dynamease</groupId>
+			<artifactId>dynamease-core</artifactId>
+			<version>${dynamease.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>javax.servlet</groupId>
+					<artifactId>servlet-api</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.mortbay.jetty</groupId>
+					<artifactId>servlet-api</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>com.dynamease</groupId>
+			<artifactId>dynamease-classif</artifactId>
+			<version>${dynamease.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.dynamease</groupId>
+			<artifactId>dynamease-request</artifactId>
+			<version>${dynamease.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>javax.servlet</groupId>
+					<artifactId>servlet-api</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.mortbay.jetty</groupId>
+					<artifactId>servlet-api</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<!-- Spring Modules -->
+
+
+
+		<!-- JSTL Library -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+
+			<!-- <scope>provided</scope> -->
+		</dependency>
+
+	</dependencies>
+
+
+	<build>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>true</filtering>
+			</resource>
+		</resources>
+
+		<plugins>
+
+
+			<plugin>
+				<groupId>org.apache.tomcat.maven</groupId>
+				<artifactId>tomcat7-maven-plugin</artifactId>
+				<version>2.1</version>
+				<configuration>
+					<port>9090</port>
+					<path>/</path>
+				</configuration>
+			</plugin>
+
+		</plugins>
+	</build>
+
+
+</project>
